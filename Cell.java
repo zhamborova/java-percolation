@@ -5,8 +5,8 @@
  **************************************************************************** */
 
 public class Cell {
-    public String state;
-    public int id;
+    private String state;
+    private final int id;
 
     public Cell(int id) {
         this.state = "blocked";
@@ -15,5 +15,13 @@ public class Cell {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public int getId() {
+        return id;
     }
 }
